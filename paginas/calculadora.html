@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style3.css">
+    <script src="../js/myScript.js"></script>
+
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <p class="logo2">I.M.C</p>
+            </div>
+            <ul class="links">
+                <li><a href="../index.html">IMC</a></li>
+                <li><a href="../paginas/alimentacao.html">ALIMENTAÇÃO</a></li>
+                <li><a href="../paginas/calculadora.html">CALCULADORA</a></li>
+            </ul>
+        </nav>
+        <hr>
+
+        <div id="calculo">
+            <h3>⤹ Preencha os campos vazios abaixo e calcule o seu IMC</h3>
+            <br>
+            <label for="kg">
+                PESO:
+                <input name="kg" id="kg" type="number" />
+            </label>
+
+            <label for="altura">
+                ALTURA:
+                <input name="altura" id="altura" type="number" />
+            </label>
+
+            Adulto: [<input type="radio" name="opcao" value="1"/>]
+            Idoso: [<input type="radio" name="opcao" value="2"/>]
+            <br/>
+            <br>
+            RESULTADO:
+            <input name="imc" id="imc" type="text" disabled="disabled" />
+            <br>
+            <br>
+            <button type="button" onclick="calcular()">CALCULAR</button>
+            <p id="c"></p>
+        </div>
+    </div>
+
+</body>
+</html>
